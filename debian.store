@@ -1,1 +1,1 @@
-{"base": "641e9ff", "parent": "debian/rolling/dynamixel_workbench", "previous": "243adf4", "trim": "", "trimbase": ""}
+{"base": "097e318", "parent": "debian/jazzy/dynamixel_workbench", "previous": "bdc07c2", "trim": "", "trimbase": ""}
