@@ -1,33 +1,29 @@
-# DYNAMIXEL Workbench
-- Active Branches: noetic, humble, jazzy, main
-- Legacy Branches: *-devel
+How to run dynamixel_workbench in linux without ROS
 
-## Open Source Projects Related to Dynamixel Workbench
-- [dynamixel_sdk](https://github.com/ROBOTIS-GIT/DynamixelSDK)
-- [dynamixel_workbench](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
-- [dynamixel_workbench_msgs](https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs)
-- [dynamixel_hardware_interface](https://github.com/ROBOTIS-GIT/dynamixel_hardware_interface)
-- [dynamixel_interfaces](https://github.com/ROBOTIS-GIT/dynamixel_interfaces)
-- [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
-- [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
-- [OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
-- [OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)
+1. Downloads DynamixelSDK
 
-## Documentation, Videos, and Community
+```
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
+```
 
-### Official Documentation
-- ⚙️ **[ROBOTIS DYNAMIXEL](https://dynamixel.com/)**
-- 📚 **[ROBOTIS e-Manual for Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/)**
-- 📚 **[ROBOTIS e-Manual for Dynamixel Workbench](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/)**
-- 📚 **[ROBOTIS e-Manual for TurtleBot3](http://turtlebot3.robotis.com/)**
-- 📚 **[ROBOTIS e-Manual for OpenMANIPULATOR-X](https://emanual.robotis.com/docs/en/platform/openmanipulator_x/overview/)**
+2. Build DynamixelSDK
 
-### Learning Resources
-- 🎥 **[ROBOTIS YouTube Channel](https://www.youtube.com/@ROBOTISCHANNEL)**
-- 🎥 **[ROBOTIS Open Source YouTube Channel](https://www.youtube.com/@ROBOTISOpenSourceTeam)**
-- 🎥 **[ROBOTIS TurtleBot3 YouTube Playlist](https://www.youtube.com/playlist?list=PLRG6WP3c31_XI3wlvHlx2Mp8BYqgqDURU)**
-- 🎥 **[ROBOTIS OpenMANIPULATOR YouTube Playlist](https://www.youtube.com/playlist?list=PLRG6WP3c31_WpEsB6_Rdt3KhiopXQlUkb)**
+http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#build-the-library
 
-### Community & Support
-- 💬 **[ROBOTIS Community Forum](https://forum.robotis.com/)**
-- 💬 **[TurtleBot category from ROS Community](https://discourse.ros.org/c/turtlebot/)**
+
+3. Downloads Dynamixel-Workbench
+
+```
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench
+```
+
+4. Build Dynamixel-Workbench and Run examples
+
+```
+$ cd ${YOUR_DOWNLOAD_PATH}/dynamixel_workbench/dynamixel_workbench_toolbox/examples
+$ mkdir build && cd build
+$ cmake ..
+$ make
+$ sudo chmod a+rw ${USB_PORT}
+$ ./monitor
+```
