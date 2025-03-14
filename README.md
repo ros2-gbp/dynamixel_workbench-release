@@ -1,3 +1,28 @@
+## dynamixel_workbench (jazzy) - 2.2.4-1
+
+The packages in the `dynamixel_workbench` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release dynamixel_workbench -t jazzy -r jazzy --edit` on `Fri, 14 Mar 2025 08:56:41 -0000`
+
+These packages were released:
+- `dynamixel_workbench`
+- `dynamixel_workbench_toolbox`
+
+Version of package(s) in repository `dynamixel_workbench`:
+
+- upstream repository: https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+- release repository: https://github.com/ros2-gbp/dynamixel_workbench-release.git
+- rosdistro version: `2.2.3-5`
+- old version: `2.2.3-5`
+- new version: `2.2.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## dynamixel_workbench (humble) - 2.2.4-1
 
 The packages in the `dynamixel_workbench` repository were released into the `humble` distro by running `/usr/bin/bloom-release dynamixel_workbench -t humble -r humble --edit` on `Fri, 14 Mar 2025 08:51:55 -0000`
