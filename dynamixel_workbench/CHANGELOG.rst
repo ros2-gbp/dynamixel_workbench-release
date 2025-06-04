@@ -2,17 +2,23 @@
 Changelog for package dynamixel_workbench
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.5 (2025-06-04)
+------------------
+* Remove unused rclcpp dependency
+* Remove ament_target_dependencies (deprecated in ROS 2 kilted)
+* Contributors: ijnek
+
 2.2.4 (2025-03-14)
 ------------------
 * Fixed the issue where the Workbench example was not building on SBC by adding the ARM option.
 * Added the CI for ROS 2 rolling, jazzy and Humble.
-* Contributoers: Wonho Yun
+* Contributors: Wonho Yun
 
 2.2.3 (2022-10-06)
 ------------------
 * ROS2 release (Foxy, Galactic, Humble)
 * fix variable length warning (#364)
-* Contributoers: Kenji Brameld, Will Son
+* Contributors: Kenji Brameld, Will Son
 
 2.2.2 (2022-01-25)
 ------------------
